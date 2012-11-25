@@ -1,0 +1,11 @@
+This compiler is based on the following idea: if in your text there is some
+\mathrm, it is obvious that you are in a $...$ section or in a \[...\] section.
+So, if you want to abbreviate your typing, you could write instead:
+
+		\[\rm{Roman\,math}\] and \bf{textual}
+
+Then you must compile the current file with jb2tex 
+
+		jb2tex file
+
+that will output a file.tex

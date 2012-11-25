@@ -1,0 +1,24 @@
+$dfg$
+
+
+%include texcomp.mll:=3/6.%
+
+sòglij
+ xxx
+\it{vk} 
+%-
+This is the
+long comment
+-%
+% This is the standard comment (the first letter mustn't follow %)
+
+
+%-
+This is equal to write \begin{itemize}...\end{itemize}
+-%
+
+%itemize
+\item ciao
+.% 
+
+$dfg$

@@ -1,0 +1,5 @@
+- gestione della 
+
+- alcuni simboli matematici, come \in, devono essere inseribili all'interno
+  del codice senza scrivere solamente per un simbolo $\in$, tranne se si è
+  già in modalità matematica.
