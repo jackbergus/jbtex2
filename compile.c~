@@ -87,17 +87,15 @@ void mkworld() {
 	//struct stat okbiblio;
 	
 	do_argv(2,LATEX_COMPILER,"main.tex");
-
-	do_argv(2,BIBTEX_COMPILER,"main.aux");
-		
-	do_argv(2,LATEX_COMPILER,"main.tex");
-	do_argv(2,LATEX_COMPILER,"main.tex");
-
+	
 	if (IS_FILE("main.idx")) {
 		printf("\033[35mThere is main.idx...\033[0m\n");
 		do_argv(2,MAKEINDEX_COMP,"main.idx");
 		
 	}
-
-	do_argv(2,LATEX_COMPILER,"main.tex");	
+	
+	do_argv(2,BIBTEX_COMPILER,"main.aux");
+	
+	do_argv(2,LATEX_COMPILER,"main.tex");
+	do_argv(2,LATEX_COMPILER,"main.tex");
 }
